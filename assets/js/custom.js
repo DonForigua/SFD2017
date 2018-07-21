@@ -96,8 +96,7 @@ $('#header nav li').click(function(){
 	});
 	
 	
-	
-	$(window).load(function() {
+	$(window).on('load', function(){
 		$('html,body').animate({
 			scrollTop : 0
 		}, 50);
@@ -225,7 +224,7 @@ $(window).scroll(function() {
 
 	
 	
-	$(window).load(function() {
+	$(window).on('load', function(){
 			if ($('.parallax').length) {
 				$('.parallax').each(function() {
 					parallax($(this), 0.1);
