@@ -195,7 +195,7 @@ $(window).scroll(function() {
 	$('.more-event-btn').click(function() {
 		$('.more-event-toggle-section').slideToggle('slow');
 		$(this).text(function(i, v){
-            return v === 'View More' ? 'View Less' : 'View More'
+            return v === 'Ver mas' ? 'Ver menos' : 'Ver mas'
        });
 	}); 
 
@@ -258,15 +258,14 @@ $(window).scroll(function() {
 			if ($('#map-canvas').length) {
 				var map = new GMaps({
 					div : '#map-canvas',
-					lat : 4.598668111337932,
-					lng : -74.072340466502,
+					lat : 4.663662948522069,
+					lng : -74.05463978642729,
 					disableDefaultUI : true,
 					zoom : 17,
 					scrollwheel : false,
 					draggable: false
 				});
 				
-
 
 				map.drawOverlay({
 					lat : map.getCenter().lat(),
@@ -279,22 +278,22 @@ $(window).scroll(function() {
 				if ($(window).width() >= 1200) {
 					map.setOptions({
 						styles : Site.styles,
-						center : new google.maps.LatLng(4.598668111337932, -74.072340466502),
+						center : new google.maps.LatLng(4.663662948522069, -74.05463978642729),
 					});
 				} else if ($(window).width() >= 992) {
 					map.setOptions({
 						styles : Site.styles,
-						center : new google.maps.LatLng(4.598668111337932, -74.072340466502),
+						center : new google.maps.LatLng(4.663662948522069, -74.05463978642729),
 					});
 				} else if ($(window).width() >= 768) {
 					map.setOptions({
 						styles : Site.styles,
-						center : new google.maps.LatLng(4.598668111337932, -74.072340466502),
+						center : new google.maps.LatLng(4.663662948522069, -74.05463978642729),
 					});
 				} else {
 					map.setOptions({
 						styles : Site.styles,
-						center : new google.maps.LatLng(4.598668111337932, -74.072340466502),
+						center : new google.maps.LatLng(4.663662948522069, -74.05463978642729),
 					});
 				}
 			}
